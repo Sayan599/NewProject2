@@ -1,16 +1,16 @@
 Getting Started
 Follow these steps to install and run the project:
 
-##Step 1: Clone the Repository
+Step 1: Clone the Repository
 First, clone the repository to your local machine using Git. In your terminal or command prompt, run:
-git clone <your-repository-url>
+git clone repository-URL
 
-##Step 2: Navigate to the Project Directory
+Step 2: Navigate to the Project Directory
 Once the repository is cloned, navigate into the project directory by running:
 
-cd <your-project-directory>
+cd directory
 
-##Step 3: Install Dependencies
+Step 3: Install Dependencies
 Install all the required dependencies by running:
 
 npm install
@@ -20,7 +20,7 @@ This will install the dependencies listed in the package.json file, including:
 React
 React DOM
 Testing libraries
-##Step 4: Running the Application
+Step 4: Running the Application
 To run the project locally, use the following command:
 
 npm start
