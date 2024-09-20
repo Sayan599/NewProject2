@@ -9,17 +9,17 @@ function Home({ modifyOnClick, setModifyOnClick }) {
 
     const dummyitems = [
         {
-            name: "Regular Excercise",
+            name: "Sugar Check",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, alias? Lorem ipsum dolor sit amet.",
             price: 250
         },
         {
-            name: "Premimum Excercise",
+            name: "Blood Pressure Check",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, alias? Lorem ipsum dolor sit amet.",
             price: 250
         },
         {
-            name: "Normal Excercise",
+            name: "Service 1",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, alias? Lorem ipsum dolor sit amet.",
             price: 250
         }
@@ -34,6 +34,14 @@ function Home({ modifyOnClick, setModifyOnClick }) {
         }
     }, [loader]);
 
+    useEffect(() => {
+        if (localStorage.getItem("items") === null) {
+            localStorage.setItem("items", JSON.stringify(dummyitems));
+        }
+        else {
+            setItems(JSON.parse(localStorage.getItem("items")));
+        }
+    }, []);
 
 
     return (
